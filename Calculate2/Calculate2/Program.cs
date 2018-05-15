@@ -11,12 +11,15 @@ namespace Calculate2
         static int a; static int b;
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("Введите 2 числа");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Выберите операцию - Sum, Min, Pow, Mult, Div");
           string result= Console.ReadLine();
             if(result =="Sum")
                 {
-                Metods.summa(a, b);            
+                Metods.summa(a, b);
+                       
                  }
           
             if(result=="Min")
